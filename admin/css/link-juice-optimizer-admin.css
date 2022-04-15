@@ -1,0 +1,39 @@
+.menu-item .cf-container .cf-field,
+.cf-container-term-meta .cf-container__fields .cf-field {
+    padding: 0;
+    border: 0;
+    margin: 15px 0;
+}
+
+.cf-container-term-meta .cf-container__fields {
+    border: 0 !important;
+    background-color: transparent;
+}
+
+.cf-container-term-meta .cf-container__fields select {
+    width: auto;
+}
+
+#wp-link #link-options .add-ljo {
+    padding: 3px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#wp-link #link-options .add-ljo label span {
+    width: 83px;
+}
+
+.has-text-field #wp-link .query-results {
+    top: 223px !important;
+}
+
+#carbon_fields_container_link_juice_optimizer label {
+    font-weight: 600;
+}
+
+#carbon_fields_container_link_juice_optimizer .cf-field__help ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
