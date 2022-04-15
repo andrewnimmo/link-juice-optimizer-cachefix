@@ -1,0 +1,266 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-04-11 18:08+0200\n"
+"PO-Revision-Date: 2022-04-11 19:15+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: languages\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: admin/class-link-juice-optimizer-admin.php:94
+msgid "Ajustes generales"
+msgstr "Allgemeine Einstellungen"
+
+#: admin/class-link-juice-optimizer-admin.php:96
+#: admin/class-link-juice-optimizer-admin.php:129
+msgid "Apoya mi trabajo"
+msgstr "Meine Arbeit unterstützen"
+
+#: admin/class-link-juice-optimizer-admin.php:96
+#: admin/class-link-juice-optimizer-admin.php:129
+msgid ""
+"Las ideas para desarrollar herramientas gratuitas como este plugin se me ocurren cuando "
+"estoy disfrutando de una buena cerveza... Ahí lo dejo ;)"
+msgstr ""
+"Die Idee, kostenlose Tools wie dieses Plugin zu entwickeln, kommt mir, meist wenn ich ein "
+"gutes Bier genieße… ;)"
+
+#: admin/class-link-juice-optimizer-admin.php:96
+#: admin/class-link-juice-optimizer-admin.php:129
+msgid "Invítame a unas cervezas"
+msgstr "Lade mich auf ein paar Biere ein"
+
+#: admin/class-link-juice-optimizer-admin.php:98
+#: admin/class-link-juice-optimizer-admin.php:131
+msgid "Recuerda que es recomendable añadir esta línea al archivo robots.txt"
+msgstr "Denk daran, dass es empfohlen wird, diese Zeile in die robots.txt-Datei einzufügen"
+
+#: admin/class-link-juice-optimizer-admin.php:99
+msgid "Clase CSS personalizada que utilizará el plugin"
+msgstr "Benutzerdefinierte CSS-Klasse, die das Plugin verwenden wird"
+
+#: admin/class-link-juice-optimizer-admin.php:102
+msgid ""
+"¡Cuidado! Los enlaces que utilizan esta clase dejarán de ofuscarse si la modificas "
+"(aunque puedes reemplazar en la base de datos)"
+msgstr ""
+"Aufgepasst! Links, die diese Klasse verwenden, werden nicht mehr verschleiert, wenn Sie "
+"sie ändern (obwohl Sie sie in der Datenbank ersetzen können)."
+
+#: admin/class-link-juice-optimizer-admin.php:103
+msgid "Tipo de enlace generado"
+msgstr "Art des erzeugten Links"
+
+#: admin/class-link-juice-optimizer-admin.php:105
+msgid "Añadir atributo rel=\"nofollow\""
+msgstr "Attribut rel=“nofollow” hinzufügen."
+
+#: admin/class-link-juice-optimizer-admin.php:106
+msgid "Enlace normal (<a>) sin atributo href"
+msgstr "Normaler Link (<a>) ohne href-Attribut"
+
+#: admin/class-link-juice-optimizer-admin.php:107
+msgid "Con atributo onclick visible"
+msgstr "Mit sichtbarem onclick-Attribut"
+
+#: admin/class-link-juice-optimizer-admin.php:108
+msgid "Ofuscado en base64"
+msgstr "Verschleiert in base64"
+
+#: admin/class-link-juice-optimizer-admin.php:110
+msgid "Elementos extra"
+msgstr "Zusätzliche Elemente"
+
+#: admin/class-link-juice-optimizer-admin.php:112
+msgid ""
+"Incluye los casos que quieras ofuscar:<br><ul><li>ID o clases CSS de enlaces o de sus "
+"elementos padre como &lt;div&gt;, &lt;p&gt;, &lt;ul&gt; (#mi-id, .mi-clase,...)</"
+"li><li>URL de destino individuales (https://dominio.com/destino/)</li><li>Todos los "
+"enlaces pertenecientes a un directorio determinado mediante un <strong>*</strong> "
+"(https://dominio.com/directorio/<strong>*</strong>)</li><li>Todos los enlaces de destino "
+"que coincidan con una raíz, también mediante <strong>*</strong> (https://dominio.com/"
+"palabra<strong>*</strong>)</li><li>Parámetros incluidos en URL (?parametro)</li></"
+"ul>Inserta un elemento por línea."
+msgstr ""
+"Geben Sie die Fälle an, die Sie verschleiern wollen:<br><ul><li>IID oder CSS-Klassen von "
+"Links oder deren übergeordneten Elementen wie &lt;div&gt;, &lt;p&gt;, &lt;ul&gt; (#meine-"
+"id, .meine-Klasse,...)</li><li>Individuelle Ziel-URLs (https://domain.com/zielseite/)</"
+"li><li>Alle Links, die zu einem bestimmten Verzeichnis gehören, mit Hilfe eines "
+"<strong>*</strong> (https://domain.com/verzeichnis/<strong>*</strong>)</li><li>Alle "
+"Ziellinks, die mit einer Wurzel übereinstimmen, auch über <strong>*</strong> (https://"
+"domain.com/wort<strong>*</strong>)</li><li>In der URL enthaltene Parameter (?parameter)</"
+"li></ul>Fügt ein Element pro Zeile ein."
+
+#: admin/class-link-juice-optimizer-admin.php:113
+msgid ""
+"#mi-id\n"
+".mi-clase\n"
+"https://dominio.com/destino/\n"
+"https://dominio.com/directorio/*\n"
+"https://dominio.com/palabra*\n"
+"?parametro"
+msgstr ""
+"#meine-id\n"
+".meine-Klasse\n"
+"https://domain.com/zielseite/\n"
+"https://domain.com/verzeichnis/*\n"
+"https://domain.com/wort*\n"
+"?parameter"
+
+#: admin/class-link-juice-optimizer-admin.php:114
+msgid "Código CSS"
+msgstr "CSS-Code"
+
+#: admin/class-link-juice-optimizer-admin.php:116
+msgid ""
+"a.ljoptimizer,\n"
+"span.ljoptimizer {\n"
+"\tcursor: pointer; /* añade el cursor que simula un enlace */\n"
+"}"
+msgstr ""
+"a.ljoptimizer,\n"
+"span.ljoptimizer {\n"
+"\tcursor: pointer; /* fügt den Cursor hinzu, der einen Link simuliert */\n"
+"}"
+
+#: admin/class-link-juice-optimizer-admin.php:117
+msgid "Prioridad de carga del hook"
+msgstr "Priorität der Hakenbelastung"
+
+#: admin/class-link-juice-optimizer-admin.php:119
+msgid "¡Cuidado! No es necesario que modifiques este valor, deja el valor por defecto "
+msgstr ""
+"Seien Sie vorsichtig! Sie brauchen diesen Wert nicht zu ändern, lassen Sie den "
+"Standardwert. "
+
+#: admin/class-link-juice-optimizer-admin.php:132
+msgid "Ofuscar enlaces de categorías"
+msgstr "Kategorie-Links verschleiern"
+
+#: admin/class-link-juice-optimizer-admin.php:133
+msgid ""
+"Si marcas esta casilla todos los enlaces de categorías serán ofuscados de manera "
+"predeterminada (solo funciona en el loop)."
+msgstr ""
+"Wenn Sie dieses Kontrollkästchen aktivieren, werden alle Kategorielinks standardmäßig "
+"verschleiert (funktioniert nur im loop)."
+
+#: admin/class-link-juice-optimizer-admin.php:134
+msgid "Ofuscar enlaces de productos"
+msgstr "Produktlinks verschleiern"
+
+#: admin/class-link-juice-optimizer-admin.php:135
+msgid ""
+"Si marcas esta casilla todos los enlaces de productos serán ofuscados de manera "
+"predeterminada (solo funciona en el loop)."
+msgstr ""
+"Wenn Sie dieses Kontrollkästchen aktivieren, werden alle Produktlinks standardmäßig "
+"verschleiert (funktioniert nur im loop)."
+
+#: admin/class-link-juice-optimizer-admin.php:136
+msgid "Ofuscar enlaces (botones) \"Añadir al carrito\""
+msgstr "Links (Schaltflächen) ”In den Warenkorb legen” verschleiern."
+
+#: admin/class-link-juice-optimizer-admin.php:137
+msgid ""
+"Si marcas esta casilla todos los enlaces (botones) para añadir un producto al carrito "
+"serán ofuscados (ajuste global)."
+msgstr ""
+"Wenn du dieses Kästchen anklickst, werden alle Links (Schaltflächen) zum Hinzufügen eines "
+"Produkts zum Warenkorb verschleiert gemacht (globale Einstellung)."
+
+#: admin/class-link-juice-optimizer-admin.php:142
+msgid "Ajustes de menú"
+msgstr "Menüeinstellungen"
+
+#: admin/class-link-juice-optimizer-admin.php:144
+#: admin/class-link-juice-optimizer-admin.php:222
+msgid "Ofuscar este enlace"
+msgstr "Diesen Link verschleiern"
+
+#: admin/class-link-juice-optimizer-admin.php:148
+msgid "Propiedades de categoría"
+msgstr "Kategorie-Eigenschaften"
+
+#: admin/class-link-juice-optimizer-admin.php:151
+msgid "Ofuscar el enlace a esta categoría"
+msgstr "Link zu dieser Kategorie verschleiern"
+
+#: admin/class-link-juice-optimizer-admin.php:153
+#: admin/class-link-juice-optimizer-admin.php:166
+msgid "Predeterminado"
+msgstr "Standard"
+
+#: admin/class-link-juice-optimizer-admin.php:154
+#: admin/class-link-juice-optimizer-admin.php:167
+msgid "Sí"
+msgstr "Ja"
+
+#: admin/class-link-juice-optimizer-admin.php:155
+#: admin/class-link-juice-optimizer-admin.php:168
+msgid "No"
+msgstr "Nein"
+
+#: admin/class-link-juice-optimizer-admin.php:160
+msgid "Enlace de producto"
+msgstr "Produkt-Link"
+
+#: admin/class-link-juice-optimizer-admin.php:164
+msgid "Ofuscar el enlace a este producto"
+msgstr "Link zu diesem Produkt verschleiern"
+
+#: admin/class-link-juice-optimizer-admin.php:186
+msgid "Ofuscar enlaces en este widget"
+msgstr "Links in diesem Widget verschleiern"
+
+#: admin/class-link-juice-optimizer-admin.php:305
+msgid "Ajustes"
+msgstr "Einstellungen"
+
+#~ msgid ""
+#~ "Sustituye los enlaces por una etiqueta &lt;span&gt; clicable, añade el atributo "
+#~ "nofollow o elimina el atributo href para optimizar el link juice."
+#~ msgstr ""
+#~ "Ersetze Links durch ein klickbares &lt;span&gt; Tag (oder füge das nofollow-Attribut "
+#~ "hinzu), um den Link-Saft zu optimieren."
+
+#~ msgid ""
+#~ "Incluye IDs o clases CSS de elementos que quieras ofuscar (pueden ser elementos padre "
+#~ "como &lt;div&gt;, &lt;p&gt;, &lt;ul&gt;,... o enlaces), también puedes incluir el "
+#~ "atributo href del enlace que quieres ofuscar. Inserta un elemento por línea."
+#~ msgstr ""
+#~ "Füge IDs oder CSS-Klassen von Elementen ein, die du verschleiern willst (sie können "
+#~ "übergeordnete Elemente wie &lt;div&gt;, &lt;p&gt;, &lt;ul&gt;,... oder Links) sein, du "
+#~ "kannst auch das href-Attribut des Links angeben, den du verschleiern willst Füge ein "
+#~ "Element pro Zeile ein."
+
+#~ msgid ""
+#~ "#mi-id\n"
+#~ ".mi-clase\n"
+#~ "https://mi-enlace-de-destino.com"
+#~ msgstr ""
+#~ "#meine-id\n"
+#~ ".meine-Klasse\n"
+#~ "https://domain.com/zielseite/\n"
+
+#~ msgid "https://www.fedegomez.es/"
+#~ msgstr "https://www.fedegomez.es/"
+
+#~ msgid "Fede Gómez"
+#~ msgstr "Fede Gómez"
+
+#~ msgid "https://www.fedegomez.es/link-juice-optimizer-plugin-optimizar-crawl-budget/"
+#~ msgstr "https://www.fedegomez.es/link-juice-optimizer-plugin-optimizar-crawl-budget/"
+
+#~ msgid "Link Juice Optimizer"
+#~ msgstr "Link Juice Optimizer"

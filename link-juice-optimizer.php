@@ -13,7 +13,7 @@
  * @package           Link_Juice_Optimizer
  *
  * @wordpress-plugin
- * Plugin Name:       Link Juice Optimizer CHANGE ME
+ * Plugin Name:       Link Juice Optimizer
  * Plugin URI:        https://www.fedegomez.es/link-juice-optimizer-plugin-optimizar-crawl-budget/
  * Description:       Sustituye los enlaces por una etiqueta &lt;span&gt; clicable, añade el atributo nofollow o elimina el atributo href para optimizar el link juice.
  * Version:           2.3
