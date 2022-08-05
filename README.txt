@@ -22,7 +22,7 @@ The plugin allows to obfuscate links in 3 parts of our WordPress:
 To obfuscate a link, the only thing you have to do is to apply the class "ljoptimizer", then the plugin will do its job using PHP and Javascript functions.
 
 == Installation ==
-1. Visit the plugins page within your dashboard, select ‘Add New’ and search for ‘Super Sitemap for SEO’ or upload the plugin folder to the `/wp-content/plugins/` directory.
+1. Visit the plugins page within your dashboard, select â€˜Add Newâ€™ and search for â€˜Super Sitemap for SEOâ€™ or upload the plugin folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the \'Plugins\' menu in WordPress.
 1. Go to the plugin settings after activation to choose your settings.
 
