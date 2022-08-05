@@ -655,7 +655,11 @@ class Link_Juice_Optimizer_Public
 					default:
 						if (strpos($elemento, '*') !== false) {
 							$elemento = str_replace('*', '', $elemento);
-							$elementos_por_tipo .= 'a[href^=' . $elemento . '],';
+							if (substr_count($elemento, '*') == 1) {
+								$elementos_por_tipo .= 'a[href^=' . $elemento . '],';
+							} else {
+								$elementos_por_tipo .= 'a[href*=' . $elemento . '],';
+							}
 						} else {
 							$elementos_por_tipo .= 'a[href=' . $elemento . '],';
 						}

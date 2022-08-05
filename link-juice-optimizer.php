@@ -16,7 +16,7 @@
  * Plugin Name:       Link Juice Optimizer
  * Plugin URI:        https://www.fedegomez.es/link-juice-optimizer-plugin-optimizar-crawl-budget/
  * Description:       Sustituye los enlaces por una etiqueta &lt;span&gt; clicable, añade el atributo nofollow o elimina el atributo href para optimizar el link juice.
- * Version:           2.3
+ * Version:           2.3.1
  * Author:            Fede Gómez
  * Author URI:        https://www.fedegomez.es/
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if (!defined('WPINC')) {
  * Start at version 2.0.1 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define('LINK_JUICE_OPTIMIZER_VERSION', '2.3');
+define('LINK_JUICE_OPTIMIZER_VERSION', '2.3.1');
 
 /**
  * The code that runs during plugin activation.

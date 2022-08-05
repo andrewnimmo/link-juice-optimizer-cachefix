@@ -3,9 +3,9 @@ Contributors: GSFede
 Donate link: https://www.buymeacoffee.com/fedegomez
 Tags: obfuscation, link juice, internal linking, crawl budget
 Requires at least: 5.0
-Tested up to: 5.9
+Tested up to: 6.0.1
 Requires PHP: 5.6.39
-Stable tag: 2.3
+Stable tag: 2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,7 @@ The plugin allows to obfuscate links in 3 parts of our WordPress:
 To obfuscate a link, the only thing you have to do is to apply the class "ljoptimizer", then the plugin will do its job using PHP and Javascript functions.
 
 == Installation ==
-1. Visit the plugins page within your dashboard, select â€˜Add Newâ€™ and search for â€˜Super Sitemap for SEOâ€™ or upload the plugin folder to the `/wp-content/plugins/` directory.
+1. Visit the plugins page within your dashboard, select ‘Add New’ and search for ‘Super Sitemap for SEO’ or upload the plugin folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the \'Plugins\' menu in WordPress.
 1. Go to the plugin settings after activation to choose your settings.
 
@@ -33,6 +33,9 @@ To obfuscate a link, the only thing you have to do is to apply the class "ljopti
 No, the plugin does not make any changes to the contents of the database, it only modifies the links on the fly at the time the page is requested.
 
 == Changelog ==
+
+= 2.3.1 =
+* Added option to obfuscate links containing a word or a directory (*word*, */page/*), regardless of their position in the URL.
 
 = 2.3 =
 * First version of the plugin in the official WordPress repository.
