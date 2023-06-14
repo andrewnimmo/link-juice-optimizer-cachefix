@@ -612,7 +612,7 @@ class Link_Juice_Optimizer_Public
 			$elementos_extra = trim(carbon_get_theme_option('ljo_elementos_extra'));
 			if (strlen($elementos_extra) > 0) {
 				$elementos_extra = explode(PHP_EOL, $elementos_extra);
-				array_walk($elementos_extra, function (&$value, &$key) {
+				array_walk($elementos_extra, function (&$value, $key) {
 					$value = trim($value);
 				});
 				$this->elementos_extra = $elementos_extra;
@@ -701,7 +701,12 @@ class Link_Juice_Optimizer_Public
 	{
 		$elementos_extra = $this->get_ljo_elementos_extra();
 		if (!is_admin() && gettype($elementos_extra) == 'array') {
-			ob_end_flush();
+            if (ob_get_length() > 0) {
+                if (defined('WP_DEBUG') && true === WP_DEBUG) {
+                    error_log("link-juice-optimizer: flushing");
+                }
+                ob_end_flush();
+            }
 		}
 	}
 }

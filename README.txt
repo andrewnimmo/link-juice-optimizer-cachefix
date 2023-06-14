@@ -1,11 +1,11 @@
 === Link Juice Optimizer ===
-Contributors: GSFede
+Contributors: GSFede, andrewnimmo
 Donate link: https://www.buymeacoffee.com/fedegomez
 Tags: obfuscation, link juice, internal linking, crawl budget
 Requires at least: 5.0
 Tested up to: 6.0.1
 Requires PHP: 5.6.39
-Stable tag: 2.3.1
+Stable tag: 2.3.1-cachefix
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,9 @@ To obfuscate a link, the only thing you have to do is to apply the class "ljopti
 No, the plugin does not make any changes to the contents of the database, it only modifies the links on the fly at the time the page is requested.
 
 == Changelog ==
+
+= 2.3.1-cachefix =
+* Change the action hook from wp_footer to shutdown to avoid issues with various cache plugins, presented as an initial or persistent blank page, and Elementor Pro.
 
 = 2.3.1 =
 * Added option to obfuscate links containing a word or a directory (*word*, */page/*), regardless of their position in the URL.

@@ -197,7 +197,8 @@ class Link_Juice_Optimizer
         //$this->loader->add_action('wp_head', $plugin_public, 'ljo_buffer_start', PHP_INT_MAX);
         //$this->loader->add_action('wp_footer', $plugin_public, 'ljo_buffer_end', PHP_INT_MAX);
         $this->loader->add_action('wp_head', $plugin_public, 'ljo_buffer_start', $priority);
-        $this->loader->add_action('wp_footer', $plugin_public, 'ljo_buffer_end', $priority);
+        // Use the shutdown hook to curcumvent problems with caching plugins, elementor pro.
+        $this->loader->add_action('shutdown', $plugin_public, 'ljo_buffer_end', $priority);
     }
 
     /**
