@@ -8,17 +8,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://www.fedegomez.es/
- * @since             2.0.1
- * @package           Link_Juice_Optimizer
+ * @link              https://github.com/andrewnimmo
+ * @since             2.3.1-cachefix
+ * @package           Link_Juice_Optimizer_cachefix
  *
  * @wordpress-plugin
- * Plugin Name:       Link Juice Optimizer
- * Plugin URI:        https://www.fedegomez.es/link-juice-optimizer-plugin-optimizar-crawl-budget/
+ * Plugin Name:       Link Juice Optimizer cachefix
+ * Plugin URI:        https://github.com/andrewnimmo/link-juice-optimizer/tree/andrewnimmo/fix-caching-with-hook-change
  * Description:       Sustituye los enlaces por una etiqueta &lt;span&gt; clicable, añade el atributo nofollow o elimina el atributo href para optimizar el link juice.
- * Version:           2.3.1
- * Author:            Fede Gómez
- * Author URI:        https://www.fedegomez.es/
+ * Version:           2.3.1-cachefix
+ * Author:            Fede Gómez, Andrew David Nimmo
+ * Author URI:        https://github.com/andrewnimmo
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       link-juice-optimizer
