@@ -37,7 +37,7 @@ class Link_Juice_Optimizer_i18n
 	{
 
 		load_plugin_textdomain(
-			'link-juice-optimizer',
+			'link-juice-optimizer-cachefix',
 			false,
 			dirname(dirname(plugin_basename(__FILE__))) . '/languages/'
 		);
