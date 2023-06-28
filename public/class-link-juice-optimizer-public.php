@@ -703,7 +703,7 @@ class Link_Juice_Optimizer_Public
 		if (!is_admin() && gettype($elementos_extra) == 'array') {
             if (ob_get_length() > 0) {
                 if (defined('WP_DEBUG') && true === WP_DEBUG) {
-                    error_log("link-juice-optimizer-cacheflush: flushing");
+                    error_log("link-juice-optimizer-cachefix: flushing");
                 }
                 ob_end_flush();
             }
