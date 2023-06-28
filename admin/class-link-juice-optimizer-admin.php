@@ -301,7 +301,7 @@ class Link_Juice_Optimizer_Admin
 	public function ljo_add_plugin_page_settings_link($links)
 	{
 		$links[] = '<a href="' .
-			admin_url('options-general.php?page=crb_carbon_fields_container_link_juice_optimizer.php') .
+			admin_url('options-general.php?page=crb_carbon_fields_container_link_juice_optimizer_cachefix.php') .
 			'">' . __('Ajustes', 'link-juice-optimizer-cachefix') . '</a>';
 		return $links;
 	}
