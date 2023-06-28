@@ -22,7 +22,7 @@
  * @link       https://www.fedegomez.es/
  * @since      2.0.1
  *
- * @package    Link_Juice_Optimizer
+ * @package    Link_Juice_Optimizer_Cachefix
  */
 
 // If uninstall not called from WordPress, then exit.

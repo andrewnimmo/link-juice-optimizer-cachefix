@@ -9,8 +9,8 @@ use Carbon_Fields\Field;
  * @link       https://www.fedegomez.es/
  * @since      2.0.1
  *
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/admin
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/admin
  */
 
 /**
@@ -19,8 +19,8 @@ use Carbon_Fields\Field;
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/admin
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/admin
  * @author     Fede Gómez <hola@fedegomez.es>
  */
 class Link_Juice_Optimizer_Admin
@@ -85,38 +85,38 @@ class Link_Juice_Optimizer_Admin
 	 */
 	public function ljo_crb_attach_fields()
 	{
-		$file_to_block = content_url() . '/plugins/' . plugin_dir_path(plugin_basename(plugin_dir_path(__DIR__) . $this->plugin_name . '.php')) . 'public/js/link-juice-optimizer.js';
+		$file_to_block = content_url() . '/plugins/' . plugin_dir_path(plugin_basename(plugin_dir_path(__DIR__) . $this->plugin_name . '.php')) . 'public/js/link-juice-optimizer-cachefix.js';
 		$file_to_block = substr($file_to_block, strlen(get_site_url()));
 		// página de opciones
-		$container = Container::make('theme_options', 'Link Juice Optimizer')
+		$container = Container::make('theme_options', 'Link Juice Optimizer Cachefix')
 			->where('current_user_capability', '=', 'manage_options')
 			->set_page_parent('options-general.php')
-			->add_tab(__('Ajustes generales', 'link-juice-optimizer'), array(
+			->add_tab(__('Ajustes generales', 'link-juice-optimizer-cachefix'), array(
 				Field::make('html', 'ljo_cervezas_1')
-					->set_html('<h3 style="text-align: center">' . __('Apoya mi trabajo', 'link-juice-optimizer') . '</h3><p style="text-align: center;font-weight: bold;font-size: 1.1em">' . __('Las ideas para desarrollar herramientas gratuitas como este plugin se me ocurren cuando estoy disfrutando de una buena cerveza... Ahí lo dejo ;)', 'link-juice-optimizer') . '</p><p style="text-align: center"><style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 0px 9px !important;font-size: 17px !important;letter-spacing:-0.08px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:\'Lato\', sans-serif !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/fedegomez"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="' . __('Invítame a unas cervezas', 'link-juice-optimizer') . '"><span style="margin-left:5px">' . __('Invítame a unas cervezas', 'link-juice-optimizer') . '</span></a></p>'),
+					->set_html('<h3 style="text-align: center">' . __('Apoya mi trabajo', 'link-juice-optimizer-cachefix') . '</h3><p style="text-align: center;font-weight: bold;font-size: 1.1em">' . __('Las ideas para desarrollar herramientas gratuitas como este plugin se me ocurren cuando estoy disfrutando de una buena cerveza... Ahí lo dejo ;)', 'link-juice-optimizer-cachefix') . '</p><p style="text-align: center"><style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 0px 9px !important;font-size: 17px !important;letter-spacing:-0.08px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:\'Lato\', sans-serif !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/fedegomez"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="' . __('Invítame a unas cervezas', 'link-juice-optimizer-cachefix') . '"><span style="margin-left:5px">' . __('Invítame a unas cervezas', 'link-juice-optimizer-cachefix') . '</span></a></p>'),
 				Field::make('html', 'ljo_aviso_robots_1')
-					->set_html('<p style="text-align:center;color:red">' . __('Recuerda que es recomendable añadir esta línea al archivo robots.txt', 'link-juice-optimizer') . ':</p><p style="text-align:center">Disallow: ' . $file_to_block . '</p>'),
-				Field::make('text', 'ljo_clase', __('Clase CSS personalizada que utilizará el plugin', 'link-juice-optimizer'))
+					->set_html('<p style="text-align:center;color:red">' . __('Recuerda que es recomendable añadir esta línea al archivo robots.txt', 'link-juice-optimizer-cachefix') . ':</p><p style="text-align:center">Disallow: ' . $file_to_block . '</p>'),
+				Field::make('text', 'ljo_clase', __('Clase CSS personalizada que utilizará el plugin', 'link-juice-optimizer-cachefix'))
 					->set_default_value('ljoptimizer')
 					->set_required(true)
-					->set_help_text(__('¡Cuidado! Los enlaces que utilizan esta clase dejarán de ofuscarse si la modificas (aunque puedes reemplazar en la base de datos)', 'link-juice-optimizer')),
-				Field::make('select', 'ljo_tipo_enlace', __('Tipo de enlace generado', 'link-juice-optimizer'))
+					->set_help_text(__('¡Cuidado! Los enlaces que utilizan esta clase dejarán de ofuscarse si la modificas (aunque puedes reemplazar en la base de datos)', 'link-juice-optimizer-cachefix')),
+				Field::make('select', 'ljo_tipo_enlace', __('Tipo de enlace generado', 'link-juice-optimizer-cachefix'))
 					->set_options(array(
-						'nofollow' => __('Añadir atributo rel="nofollow"', 'link-juice-optimizer'),
-						'href' => __('Enlace normal (<a>) sin atributo href', 'link-juice-optimizer'),
-						'onclick' => __('Con atributo onclick visible', 'link-juice-optimizer'),
-						'base64' => __('Ofuscado en base64', 'link-juice-optimizer')
+						'nofollow' => __('Añadir atributo rel="nofollow"', 'link-juice-optimizer-cachefix'),
+						'href' => __('Enlace normal (<a>) sin atributo href', 'link-juice-optimizer-cachefix'),
+						'onclick' => __('Con atributo onclick visible', 'link-juice-optimizer-cachefix'),
+						'base64' => __('Ofuscado en base64', 'link-juice-optimizer-cachefix')
 					)),
-				Field::make('textarea', 'ljo_elementos_extra', __('Elementos extra', 'link-juice-optimizer'))
+				Field::make('textarea', 'ljo_elementos_extra', __('Elementos extra', 'link-juice-optimizer-cachefix'))
 					->set_rows(8)
-					->set_help_text(__("Incluye los casos que quieras ofuscar:<br><ul><li>ID o clases CSS de enlaces o de sus elementos padre como &lt;div&gt;, &lt;p&gt;, &lt;ul&gt; (#mi-id, .mi-clase,...)</li><li>URL de destino individuales (https://dominio.com/destino/)</li><li>Todos los enlaces pertenecientes a un directorio determinado mediante un <strong>*</strong> (https://dominio.com/directorio/<strong>*</strong>)</li><li>Todos los enlaces de destino que coincidan con una raíz, también mediante <strong>*</strong> (https://dominio.com/palabra<strong>*</strong>)</li><li>Todos los enlaces que contengan una palabra o directorio, mediante un <strong>*</strong> (*palabra*, */page/*)</li><li>Parámetros incluidos en URL (?parametro)</li></ul>Inserta un elemento por línea.", 'link-juice-optimizer'))
-					->set_attribute('placeholder', __("#mi-id\n.mi-clase\nhttps://dominio.com/destino/\nhttps://dominio.com/directorio/*\nhttps://dominio.com/palabra*\n*palabra*\n*/page/*\n?parametro", 'link-juice-optimizer')),
-				Field::make('textarea', 'ljo_css', __('Código CSS', 'link-juice-optimizer'))
+					->set_help_text(__("Incluye los casos que quieras ofuscar:<br><ul><li>ID o clases CSS de enlaces o de sus elementos padre como &lt;div&gt;, &lt;p&gt;, &lt;ul&gt; (#mi-id, .mi-clase,...)</li><li>URL de destino individuales (https://dominio.com/destino/)</li><li>Todos los enlaces pertenecientes a un directorio determinado mediante un <strong>*</strong> (https://dominio.com/directorio/<strong>*</strong>)</li><li>Todos los enlaces de destino que coincidan con una raíz, también mediante <strong>*</strong> (https://dominio.com/palabra<strong>*</strong>)</li><li>Todos los enlaces que contengan una palabra o directorio, mediante un <strong>*</strong> (*palabra*, */page/*)</li><li>Parámetros incluidos en URL (?parametro)</li></ul>Inserta un elemento por línea.", 'link-juice-optimizer-cachefix'))
+					->set_attribute('placeholder', __("#mi-id\n.mi-clase\nhttps://dominio.com/destino/\nhttps://dominio.com/directorio/*\nhttps://dominio.com/palabra*\n*palabra*\n*/page/*\n?parametro", 'link-juice-optimizer-cachefix')),
+				Field::make('textarea', 'ljo_css', __('Código CSS', 'link-juice-optimizer-cachefix'))
 					->set_rows(8)
-					->set_default_value(__("a.ljoptimizer,\nspan.ljoptimizer {\n\tcursor: pointer; /* añade el cursor que simula un enlace */\n}", 'link-juice-optimizer')),
-				Field::make('text', 'ljo_hook_priority', __('Prioridad de carga del hook', 'link-juice-optimizer'))
+					->set_default_value(__("a.ljoptimizer,\nspan.ljoptimizer {\n\tcursor: pointer; /* añade el cursor que simula un enlace */\n}", 'link-juice-optimizer-cachefix')),
+				Field::make('text', 'ljo_hook_priority', __('Prioridad de carga del hook', 'link-juice-optimizer-cachefix'))
 					->set_default_value(PHP_INT_MAX)
-					->set_help_text(__('¡Cuidado! No es necesario que modifiques este valor, deja el valor por defecto ', 'link-juice-optimizer') . PHP_INT_MAX)
+					->set_help_text(__('¡Cuidado! No es necesario que modifiques este valor, deja el valor por defecto ', 'link-juice-optimizer-cachefix') . PHP_INT_MAX)
 					->set_attribute('max', PHP_INT_MAX)
 					->set_attribute('min', '0')
 					->set_attribute('step', '1')
@@ -126,46 +126,46 @@ class Link_Juice_Optimizer_Admin
 		if (class_exists('woocommerce')) {
 			$container->add_tab('WooCommerce', array(
 				Field::make('html', 'ljo_cervezas_2')
-					->set_html('<h3 style="text-align: center">' . __('Apoya mi trabajo', 'link-juice-optimizer') . '</h3><p style="text-align: center;font-weight: bold;font-size: 1.1em">' . __('Las ideas para desarrollar herramientas gratuitas como este plugin se me ocurren cuando estoy disfrutando de una buena cerveza... Ahí lo dejo ;)', 'link-juice-optimizer') . '</p><p style="text-align: center"><style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 0px 9px !important;font-size: 17px !important;letter-spacing:-0.08px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:\'Lato\', sans-serif !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/fedegomez"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="' . __('Invítame a unas cervezas', 'link-juice-optimizer') . '"><span style="margin-left:5px">' . __('Invítame a unas cervezas', 'link-juice-optimizer') . '</span></a></p>'),
+					->set_html('<h3 style="text-align: center">' . __('Apoya mi trabajo', 'link-juice-optimizer-cachefix') . '</h3><p style="text-align: center;font-weight: bold;font-size: 1.1em">' . __('Las ideas para desarrollar herramientas gratuitas como este plugin se me ocurren cuando estoy disfrutando de una buena cerveza... Ahí lo dejo ;)', 'link-juice-optimizer-cachefix') . '</p><p style="text-align: center"><style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 0px 9px !important;font-size: 17px !important;letter-spacing:-0.08px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:\'Lato\', sans-serif !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/fedegomez"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="' . __('Invítame a unas cervezas', 'link-juice-optimizer-cachefix') . '"><span style="margin-left:5px">' . __('Invítame a unas cervezas', 'link-juice-optimizer-cachefix') . '</span></a></p>'),
 				Field::make('html', 'ljo_aviso_robots_2')
-					->set_html('<p style="text-align:center;color:red">' . __('Recuerda que es recomendable añadir esta línea al archivo robots.txt', 'link-juice-optimizer') . ':</p><p style="text-align:center">Disallow: ' . $file_to_block . '</p>'),
-				Field::make('checkbox', 'ljo_subcategorias_default', __('Ofuscar enlaces de categorías', 'link-juice-optimizer'))
-					->set_help_text(__('Si marcas esta casilla todos los enlaces de categorías serán ofuscados de manera predeterminada (solo funciona en el loop).', 'link-juice-optimizer')),
-				Field::make('checkbox', 'ljo_productos_default', __('Ofuscar enlaces de productos', 'link-juice-optimizer'))
-					->set_help_text(__('Si marcas esta casilla todos los enlaces de productos serán ofuscados de manera predeterminada (solo funciona en el loop).', 'link-juice-optimizer')),
-				Field::make('checkbox', 'ljo_addtocart_default', __('Ofuscar enlaces (botones) "Añadir al carrito"', 'link-juice-optimizer'))
-					->set_help_text(__('Si marcas esta casilla todos los enlaces (botones) para añadir un producto al carrito serán ofuscados (ajuste global).', 'link-juice-optimizer')),
+					->set_html('<p style="text-align:center;color:red">' . __('Recuerda que es recomendable añadir esta línea al archivo robots.txt', 'link-juice-optimizer-cachefix') . ':</p><p style="text-align:center">Disallow: ' . $file_to_block . '</p>'),
+				Field::make('checkbox', 'ljo_subcategorias_default', __('Ofuscar enlaces de categorías', 'link-juice-optimizer-cachefix'))
+					->set_help_text(__('Si marcas esta casilla todos los enlaces de categorías serán ofuscados de manera predeterminada (solo funciona en el loop).', 'link-juice-optimizer-cachefix')),
+				Field::make('checkbox', 'ljo_productos_default', __('Ofuscar enlaces de productos', 'link-juice-optimizer-cachefix'))
+					->set_help_text(__('Si marcas esta casilla todos los enlaces de productos serán ofuscados de manera predeterminada (solo funciona en el loop).', 'link-juice-optimizer-cachefix')),
+				Field::make('checkbox', 'ljo_addtocart_default', __('Ofuscar enlaces (botones) "Añadir al carrito"', 'link-juice-optimizer-cachefix'))
+					->set_help_text(__('Si marcas esta casilla todos los enlaces (botones) para añadir un producto al carrito serán ofuscados (ajuste global).', 'link-juice-optimizer-cachefix')),
 			));
 		}
 
 		// ofuscar enlaces en menús
-		Container::make('nav_menu_item', __('Ajustes de menú', 'link-juice-optimizer'))
+		Container::make('nav_menu_item', __('Ajustes de menú', 'link-juice-optimizer-cachefix'))
 			->add_fields(array(
-				Field::make('checkbox', 'ljo_item_menu', __('Ofuscar este enlace', 'link-juice-optimizer')),
+				Field::make('checkbox', 'ljo_item_menu', __('Ofuscar este enlace', 'link-juice-optimizer-cachefix')),
 			));
 
 		// ofuscar enlaces en categorías de WooCommerce
-		Container::make('term_meta', __('Propiedades de categoría', 'link-juice-optimizer'))
+		Container::make('term_meta', __('Propiedades de categoría', 'link-juice-optimizer-cachefix'))
 			->where('term_taxonomy', '=', 'product_cat')
 			->add_fields(array(
-				Field::make('select', 'ljo_categoria_single', __('Ofuscar el enlace a esta categoría', 'link-juice-optimizer'))
+				Field::make('select', 'ljo_categoria_single', __('Ofuscar el enlace a esta categoría', 'link-juice-optimizer-cachefix'))
 					->set_options(array(
-						'0' => __('Predeterminado', 'link-juice-optimizer'),
-						'1' => __('Sí', 'link-juice-optimizer'),
-						'2' => __('No', 'link-juice-optimizer')
+						'0' => __('Predeterminado', 'link-juice-optimizer-cachefix'),
+						'1' => __('Sí', 'link-juice-optimizer-cachefix'),
+						'2' => __('No', 'link-juice-optimizer-cachefix')
 					)),
 			));
 
 		// ofuscar enlace de producto
-		Container::make('post_meta', __('Enlace de producto', 'link-juice-optimizer'))
+		Container::make('post_meta', __('Enlace de producto', 'link-juice-optimizer-cachefix'))
 			->where('post_type', '=', 'product')
 			->set_context('side')
 			->add_fields(array(
-				Field::make('select', 'ljo_producto_single', __('Ofuscar el enlace a este producto', 'link-juice-optimizer'))
+				Field::make('select', 'ljo_producto_single', __('Ofuscar el enlace a este producto', 'link-juice-optimizer-cachefix'))
 					->set_options(array(
-						'0' => __('Predeterminado', 'link-juice-optimizer'),
-						'1' => __('Sí', 'link-juice-optimizer'),
-						'2' => __('No', 'link-juice-optimizer')
+						'0' => __('Predeterminado', 'link-juice-optimizer-cachefix'),
+						'1' => __('Sí', 'link-juice-optimizer-cachefix'),
+						'2' => __('No', 'link-juice-optimizer-cachefix')
 					))
 			));
 	}
@@ -183,7 +183,7 @@ class Link_Juice_Optimizer_Admin
 		$ljo_widget_checkbox = isset($instance['ljo_widget_checkbox']) ? $instance['ljo_widget_checkbox'] : ''; ?>
 		<p>
 			<input class="checkbox" type="checkbox" id="<?php echo esc_attr($widget->get_field_id('ljo_widget_checkbox')); ?>" name="<?php echo esc_attr($widget->get_field_name('ljo_widget_checkbox')); ?>" <?php checked(true, $ljo_widget_checkbox); ?> />
-			<label for="<?php echo esc_attr($widget->get_field_id('ljo_widget_checkbox')); ?>"><?php echo __('Ofuscar enlaces en este widget', 'link-juice-optimizer') ?></label>
+			<label for="<?php echo esc_attr($widget->get_field_id('ljo_widget_checkbox')); ?>"><?php echo __('Ofuscar enlaces en este widget', 'link-juice-optimizer-cachefix') ?></label>
 		</p>
 	<?php
 
@@ -219,7 +219,7 @@ class Link_Juice_Optimizer_Admin
 				// Ensure the #link-options div is present, because it's where we're appending our checkbox.
 				if (tinymce.$('#link-options').length) {
 					// Append our checkbox HTML to the #link-options div, which is already present in the DOM.
-					tinymce.$('#link-options').append(<?php echo json_encode('<div class="add-ljo"><label><span></span><input type="checkbox" id="wp-add-ljo" /> ' . __('Ofuscar este enlace', 'link-juice-optimizer') . '</label></div>'); ?>);
+					tinymce.$('#link-options').append(<?php echo json_encode('<div class="add-ljo"><label><span></span><input type="checkbox" id="wp-add-ljo" /> ' . __('Ofuscar este enlace', 'link-juice-optimizer-cachefix') . '</label></div>'); ?>);
 					// Clone the original wpLink object so we retain access to some functions.
 					originalWpLink = _.clone(wpLink);
 					wpLink.addLjo = tinymce.$('#wp-add-ljo');
@@ -302,7 +302,7 @@ class Link_Juice_Optimizer_Admin
 	{
 		$links[] = '<a href="' .
 			admin_url('options-general.php?page=crb_carbon_fields_container_link_juice_optimizer.php') .
-			'">' . __('Ajustes', 'link-juice-optimizer') . '</a>';
+			'">' . __('Ajustes', 'link-juice-optimizer-cachefix') . '</a>';
 		return $links;
 	}
 }

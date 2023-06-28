@@ -6,8 +6,8 @@
  * @link       https://www.fedegomez.es/
  * @since      2.0.1
  *
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/includes
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/includes
  */
 
 /**
@@ -16,8 +16,8 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      2.0.1
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/includes
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/includes
  * @author     Fede Gómez <hola@fedegomez.es>
  */
 class Link_Juice_Optimizer_Deactivator {

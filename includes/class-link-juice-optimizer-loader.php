@@ -6,8 +6,8 @@
  * @link       https://www.fedegomez.es/
  * @since      2.0.1
  *
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/includes
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/includes
  */
 
 /**
@@ -17,8 +17,8 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/includes
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/includes
  * @author     Fede Gómez <hola@fedegomez.es>
  */
 class Link_Juice_Optimizer_Loader {

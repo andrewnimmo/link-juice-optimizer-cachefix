@@ -36,6 +36,8 @@ No, the plugin does not make any changes to the contents of the database, it onl
 
 = 2.3.1-cachefix =
 * Change the action hook from wp_footer to shutdown to avoid issues with various cache plugins, presented as an initial or persistent blank page, and Elementor Pro.
+* Rename use of link juice optimizer to link juice optimizer cachefix to minimize possible conflicts.
+* Update arraywalk public/class-link-juice-optimizer-public.php L615 remove unnecessary pass-by-reference of $key.
 
 = 2.3.1 =
 * Added option to obfuscate links containing a word or a directory (*word*, */page/*), regardless of their position in the URL.

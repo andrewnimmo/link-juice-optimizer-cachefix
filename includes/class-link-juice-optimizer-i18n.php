@@ -9,8 +9,8 @@
  * @link       https://www.fedegomez.es/
  * @since      2.1.3
  *
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/includes
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/includes
  */
 
 /**
@@ -20,8 +20,8 @@
  * so that it is ready for translation.
  *
  * @since      2.1.3
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/includes
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/includes
  * @author     Fede Gómez <hola@fedegomez.es>
  */
 class Link_Juice_Optimizer_i18n

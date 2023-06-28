@@ -9,8 +9,8 @@
  * @link       https://www.fedegomez.es/
  * @since      2.0.1
  *
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/includes
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/includes
  */
 
 /**
@@ -23,8 +23,8 @@
  * version of the plugin.
  *
  * @since      2.0.1
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/includes
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/includes
  * @author     Fede Gómez <hola@fedegomez.es>
  */
 class Link_Juice_Optimizer
@@ -69,12 +69,12 @@ class Link_Juice_Optimizer
      */
     public function __construct()
     {
-        if (defined('LINK_JUICE_OPTIMIZER_VERSION')) {
-            $this->version = LINK_JUICE_OPTIMIZER_VERSION;
+        if (defined('LINK_JUICE_OPTIMIZER_CACHEFIX_VERSION')) {
+            $this->version = LINK_JUICE_OPTIMIZER_CACHEFIX_VERSION;
         } else {
             $this->version = '2.3';
         }
-        $this->plugin_name = 'link-juice-optimizer';
+        $this->plugin_name = 'link-juice-optimizer-cachefix';
 
         $this->load_dependencies();
         $this->set_locale();

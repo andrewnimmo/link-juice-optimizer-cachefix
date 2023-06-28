@@ -14,8 +14,8 @@ error_reporting(E_ALL);
  * @link       https://www.fedegomez.es/
  * @since      2.0.1
  *
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/public
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/public
  */
 
 /**
@@ -24,8 +24,8 @@ error_reporting(E_ALL);
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Link_Juice_Optimizer
- * @subpackage Link_Juice_Optimizer/public
+ * @package    Link_Juice_Optimizer_Cachefix
+ * @subpackage Link_Juice_Optimizer_Cachefix/public
  * @author     Fede Gómez <hola@fedegomez.es>
  */
 class Link_Juice_Optimizer_Public
@@ -117,7 +117,7 @@ class Link_Juice_Optimizer_Public
 	 */
 	public function enqueue_scripts()
 	{
-		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/link-juice-optimizer.js', array('jquery'), $this->version, false);
+		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/link-juice-optimizer-cachefix.js', array('jquery'), $this->version, false);
 		$data = array(
 			'ljo_clase' => $this->get_ljo_clase()
 		);
@@ -703,7 +703,7 @@ class Link_Juice_Optimizer_Public
 		if (!is_admin() && gettype($elementos_extra) == 'array') {
             if (ob_get_length() > 0) {
                 if (defined('WP_DEBUG') && true === WP_DEBUG) {
-                    error_log("link-juice-optimizer: flushing");
+                    error_log("link-juice-optimizer-cacheflush: flushing");
                 }
                 ob_end_flush();
             }
